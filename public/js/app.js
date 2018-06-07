@@ -206,8 +206,8 @@ var app = function app() {
 
         // Columns
         content += '<td>' + val.rid + '</td>';
-        content += '<td>' + val.ip + ':' + val.port + '</td>';
-        content += '<td>' + val.remote_id + '</td>';
+        content += '<td><a href="' + val.ip + ':' + app.get("NODE_PORT") + '">' + val.ip + '</a>:' + val.port + '</td>';
+        content += '<td>' + val.remote_id + '</td>';33
         content += '<td>' + val.did_solicit + '</td>';
         content += '<td>' + val.pending_size + '</td>';
         content += '<td>' + val.in_msgs + ' / ' + val.out_msgs + '</td>';
